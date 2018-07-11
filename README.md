@@ -5,12 +5,12 @@ forms (as a built-in feature of the language or as npm modules). However,
 debugging errors created from promises tasks can still present some challenges
 in some use cases.
 
-As a result, an _informal_ working group was formed with the goal to make the
-experience of Node.js developers less challenging when debugging such errors.
+As a result, a team was formed with the goal to make the experience of Node.js
+developers less challenging when debugging such errors.
 
 ## Goals
 
-The goals of this working group are:
+The goals are:
 
 - Identifying, investigating and proposing solutions for gaps in promises error
   debugging use cases.
@@ -20,12 +20,12 @@ The goals of this working group are:
 ## Scope
 
 Promises debugging and error handling can cover a large surface area of the
-Node.js runtime. We want to make sure this working group is focused on just the
-critical parts of that surface area so that we can make concrete progress as
-quickly as possible.
+Node.js runtime. We want to make sure that we're focused on just the critical
+parts of that surface area so that we can make concrete progress as quickly as
+possible.
 
 Other individuals or groups can tackle the challenges that are out of scope for
-this group.
+this effort.
 
 ### In scope
 
@@ -41,13 +41,14 @@ this group.
 Any aspect of debugging promises that is not critical to _enabling_ debugging
 use cases is not in scope. For instance:
 
-- the performance of promises when using live debuggers is not relevant for this
-  working group, even if it is very important for Node.js users.
+- the performance of promises when using live debuggers is not relevant, even if
+  it is very important for Node.js users.
 
 - the user experience of using promises, even when it relates to providing a
-  safer API, is not relevant to this working group. For instance, whether
-  resolving or rejecting a promise that has already been resolved triggers an
-  error is not relevant to this working group.
+  safer API, is not relevant. For instance, whether resolving or rejecting a
+  promise that has already been resolved triggers an error is out of scope, as
+  it doesn't prevent live and post-mortem debugger users to get insights into
+  those errors.
 
 ## Use cases (TODO)
 
